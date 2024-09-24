@@ -57,7 +57,7 @@ const ConversationList: React.FC<ConversationListProps> = ({ initialItems, users
 
     const newHandler = (conversation: FullConversationType) => {
       setItems((current) => {
-        // skip if the conversation already exists
+    
         if (find(current, { id: conversation.id })) {
           return current;
         }
